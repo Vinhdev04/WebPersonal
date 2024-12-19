@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto", "Georgian", sans-serif;
+}
+
+body {
+  font-family: "Noto", "Georgian", sans-serif;
+  overflow-x: hidden;
+}
+
+body.light-theme {
+  background: #fff;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+:root {
+  --first-color: ;
+  --secondary-color: ;
+  --text-color: ;
+  --border-color: ;
+  --bg-primary: ;
+  --bg-secondary: ;
+  --fw-bold: bold;
+}
+
+.light-theme {
+  /**
+   * light theme colors 
+   */
+
+  --background-primary: hsl(0, 0%, 100%);
+  --background-secondary: hsl(0, 0%, 97%);
+
+  --action-primary: hsl(214, 32%, 91%);
+  --action-secondary: hsl(210, 38%, 95%);
+
+  --foreground-primary: hsl(218, 23%, 23%);
+  --foreground-secondary: hsl(216, 15%, 52%);
+  --foreground-tertiary: hsl(214, 20%, 69%);
+
+  --accent: hsl(229, 76%, 66%);
+}
+
+.dark-theme {
+  /**
+   * dark theme colors 
+   */
+
+  --background-primary: hsl(218, 23%, 23%);
+  --background-secondary: hsl(220, 26%, 14%);
+
+  --action-primary: hsl(216, 15%, 52%);
+  --action-secondary: hsl(218, 23%, 23%);
+
+  --foreground-primary: hsl(210, 38%, 95%);
+  --foreground-secondary: hsl(211, 25%, 84%);
+  --foreground-tertiary: hsl(214, 20%, 69%);
+
+  --accent: hsl(229, 76%, 66%);
+}
+
+:focus {
+  outline-offset: 4px;
+}
+
+/**
+ * scrollbar style
+ */
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 20px;
+  border: 4px solid;
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+  border-color: hsl(0, 0%, 90%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  border-color: hsl(219, 27%, 20%);
+}
+
+.light-theme::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 90%);
+}
+
+.dark-theme::-webkit-scrollbar-track {
+  background: hsl(219, 27%, 20%);
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.6875rem 1.1875rem;
+}
+
+.btn-primary:hover {
+  background: var(--foreground-secondary);
+  color: var(--action-primary);
+}
+
+.btn-secondary {
+  background: var(--action-secondary);
+  color: var(--foreground-secondary);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--foreground-tertiary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+}
+-----------------------------*/ .dark-theme .btn-primary:hover {
+  color: var(--background-primary);
+}
+
+.dark-theme .blog-topic {
+  background: var(--action-primary);
+  color: var(--foreground-secondary);
+}
+
+.dark-theme .blog-topic:hover {
+  background: var(--foreground-primary);
+  color: var(--action-primary);
+}
+
+.dark-theme .load-more:hover {
+  color: var(--white);
+}
+
+.dark-theme .aside .h2 {
+  color: var(--foreground-primary);
+}
