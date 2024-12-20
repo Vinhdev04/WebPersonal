@@ -160,3 +160,7 @@ body.light-theme {
 .dark-theme .aside .h2 {
   color: var(--foreground-primary);
 }
+
+.typed-cursor {
+  color: var(--accent); /* Màu sắc con trỏ */
+}

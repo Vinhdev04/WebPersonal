@@ -1,31 +1,74 @@
-const btnBar = document.querySelector(".toggle-btn");
-console.log("🚀 ~ menuBtn :", btnBar);
-const navbar = document.querySelector(".navbar");
-console.log("🚀 ~ navbar :", navbar);
-const navbarItem = document.querySelector(".navbar li");
-console.log("🚀 ~ navbarItem :", navbarItem);
+document.addEventListener("DOMContentLoaded", function () {
+  // Navbar toggle functionality
+  const nav = document.querySelector(".mobile-nav");
+  const navMenuBtn = document.querySelector(".nav-menu-btn");
+  const navCloseBtn = document.querySelector(".nav-close-btn");
 
-btnBar.addEventListener("click", function () {
-  this.classList.toggle("click");
-  navbar.classList.toggle("open");
-});
+  const navToggleFunc = function () {
+    nav.classList.toggle("active");
+  };
 
-//  # handle effect text
-const textEffect = new Typed(".info-name", {
-  strings: ["Frontend Developer", "Fix Bug", "Web Developer"],
-  typeSpeed: 70, // Tốc độ gõ
-  backSpeed: 40, // Tốc độ xóa (chậm hơn một chút so với typeSpeed)
-  loop: true, // Lặp lại vô tận
-});
+  navMenuBtn.addEventListener("click", navToggleFunc);
+  navCloseBtn.addEventListener("click", navToggleFunc);
 
-// # handle dark/light mode
-const darkIcon = document.querySelector("#moon-icon");
-console.log("🚀 ~ darkIcon :", darkIcon);
-const lightIcon = document.querySelector("#sun-icon");
-console.log("🚀 ~ lightIcon:", lightIcon);
-const toggleButton = document.getElementById("dark-mode-toggle");
-toggleButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.body.classList.toggle("light-theme");
-  document.body.classList.toggle("dark-theme");
+  // Theme toggle functionality
+  const themeBtn = document.querySelectorAll(".theme-btn");
+
+  themeBtn.forEach((button) => {
+    button.addEventListener("click", function () {
+      document.body.classList.toggle("light-theme");
+      document.body.classList.toggle("dark-theme");
+
+      themeBtn.forEach((btn) => {
+        btn.classList.toggle("light");
+        btn.classList.toggle("dark");
+      });
+    });
+  });
+
+  // Typed.js effect for name and sub-title
+  const nameElement = document.querySelector(".name");
+  if (nameElement) {
+    new Typed(".name", {
+      strings: ["Phạm&nbsp;Vinh", "A Frontend Developer", "A Web Developer"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true,
+      fadeOut: false,
+      onComplete: function () {
+        // Initialize second Typed.js effect for sub-title after the first one finishes
+        const subElement = document.querySelector(".sub");
+        if (subElement) {
+          new Typed(".sub", {
+            strings: [
+              "Programming is life. Bugs are the pain of life.",
+              "Nice to meet you!...",
+            ],
+            typeSpeed: 20,
+            backSpeed: 40,
+            loop: true,
+            fadeOut: false,
+          });
+        } else {
+          console.error('Element with class "sub" not found.');
+        }
+      },
+    });
+  } else {
+    console.error('Element with class "name" not found.');
+  }
+
+  // Typed.js effect for the About page (if .text element exists)
+  const textElement = document.querySelector(".text");
+  if (textElement) {
+    new Typed(".text", {
+      strings: ["Junior Programmer", "Developer", "Software Engineer"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      fadeOut: false,
+    });
+  } else {
+    console.error('Element with class "text" not found.');
+  }
 });
