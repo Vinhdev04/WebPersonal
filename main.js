@@ -72,3 +72,71 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error('Element with class "text" not found.');
   }
 });
+
+// TODO: HANDLE SLIDER GALLERY (ABOUT-PAGE)
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".Gallery_Splide", {
+    type: "loop",
+    perPage: 5,
+    gap: "20px", // Default gap
+    autoplay: true,
+    loop: true,
+    breakpoints: {
+      1200: {
+        perPage: 4,
+      },
+      1100: {
+        perPage: 3,
+      },
+      1069: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+      576: {
+        perPage: 1,
+      },
+    },
+  });
+
+  splide.mount();
+});
+
+// TODO: HANDLE QUESTION/ANSWER FAQS
+const faq = document.querySelectorAll(".faq__box");
+faq.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("show__answer");
+  });
+});
+
+// TODO: HANDLE SLIDE FEEDBACK
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".feedback_Splide", {
+    type: "loop",
+    perPage: 3,
+    gap: "20px", // Default gap
+    autoplay: true,
+    loop: true,
+    breakpoints: {
+      1200: {
+        perPage: 4,
+      },
+      1100: {
+        perPage: 3,
+      },
+      1069: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+      576: {
+        perPage: 1,
+      },
+    },
+  });
+
+  splide.mount();
+});
