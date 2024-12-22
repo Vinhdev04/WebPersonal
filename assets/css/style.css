@@ -1250,8 +1250,8 @@ header .btn-group {
 }
 
 .faq .faq__content .heading {
-  /* width: 100%; */
   text-align: left;
+  /* width: 100%; */
   /* display: flex;
   justify-content: start;
   align-items: start; */
@@ -1680,12 +1680,18 @@ footer .wrapper {
 }
 
 /*-----------------------------------*\ 
+  #PROJECT
+\*-----------------------------------*/
+
+/* *------------------------------------------------------------- * */
+
+/*-----------------------------------*\ 
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for larger than 550px screen
- */
+/*-----------------------------------*\ 
+  # responsive for larger than 550px screen
+\*-----------------------------------*/
 
 @media (min-width: 550px) {
   :root {
@@ -1696,9 +1702,9 @@ footer .wrapper {
     --fs-base: 0.9rem;
   }
 
-  /**
-   * BLOG 
-   */
+  /*-----------------------------------*\ 
+  #BLOG
+\*-----------------------------------*/
 
   .blog-card {
     display: grid;
@@ -1719,9 +1725,121 @@ footer .wrapper {
   }
 }
 
-/**
- * responsive for larger than 650px screen
- */
+@media (max-width: 567px) {
+  /*-----------------------------------*\ 
+  #ABOUT-PAGE
+\*-----------------------------------*/
+  .about__page .page__content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about__page .wrapper .page__img {
+    display: none;
+  }
+
+  .info .wrapper {
+    flex-direction: column;
+  }
+
+  .info .info__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .info .wrapper .info__content {
+    width: 100%;
+  }
+
+  .info .wrapper .info__img {
+    width: 100%;
+  }
+
+  .about__services .services__card {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+
+  .about__services .services__card .card {
+    width: 100%;
+  }
+
+  .about__media .media__block {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__media .media__block .media__content {
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .faq .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .faq .faq__content {
+    width: 100%;
+  }
+
+  .faq__img {
+    width: 100%;
+    align-self: center;
+    justify-items: center;
+  }
+
+  .about__contact .content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .about__contact .content .contact__block {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .about__contact .content .contact__form {
+    width: 100%;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  footer .container .wrapper {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .light-theme .logo-light,
+  .dark-theme .logo-dark {
+    margin-right: 0;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  header {
+    border-bottom: 0;
+  }
+
+  .about__page .page__content .social {
+    flex-direction: column;
+  }
+}
+/*-----------------------------------*\ 
+  # responsive for larger than 650px screen
+\*-----------------------------------*/
 
 @media (min-width: 650px) {
   :root {
@@ -1740,9 +1858,9 @@ footer .wrapper {
     padding: 0 30px;
   }
 
-  /**
-   * HEADER 
-   */
+  /*-----------------------------------*\ 
+  #HEADER
+\*-----------------------------------*/
 
   .navbar {
     padding: 30px 0;
@@ -1766,9 +1884,10 @@ footer .wrapper {
     font-family: "Inter";
     color: var(--accent);
   }
-  /**
-   * BLOG 
-   */
+
+  /*-----------------------------------*\ 
+  #BLOG
+\*-----------------------------------*/
 
   .blog .h2 {
     position: relative;
@@ -1846,9 +1965,9 @@ footer .wrapper {
   }
 }
 
-/**
- * responsive for larger than 768px screen
- */
+/*-----------------------------------*\ 
+  # responsive for larger than 768px screen
+\*-----------------------------------*/
 
 @media (min-width: 768px) {
   /**
@@ -1860,9 +1979,9 @@ footer .wrapper {
   }
 }
 
-/**
- * responsive for larger than 1024px screen
- */
+/*-----------------------------------*\ 
+  # responsive for larger than 1024px screen
+\*-----------------------------------*/
 
 @media (max-width: 650px) {
   .navbar a span {
@@ -1887,9 +2006,9 @@ footer .wrapper {
     max-width: 1150px;
   }
 
-  /**
-   * HEADER 
-   */
+  /*-----------------------------------*\ 
+  #HEADER
+\*-----------------------------------*/
 
   header .btn-group {
     display: none;
@@ -1954,9 +2073,9 @@ footer .wrapper {
     left: calc(100% - 24px);
   }
 
-  /**
-   * HERO 
-   */
+  /*-----------------------------------*\ 
+  #HERO
+\*-----------------------------------*/
 
   .hero {
     text-align: left;
@@ -2029,9 +2148,9 @@ footer .wrapper {
     z-index: 2;
   }
 
-  /**
-   * MAIN 
-   */
+  /*-----------------------------------*\ 
+  #MAIN
+\*-----------------------------------*/
 
   .main .container {
     display: grid;
@@ -2039,9 +2158,9 @@ footer .wrapper {
     gap: 60px;
   }
 
-  /**
-   * ASIDE 
-   */
+  /*-----------------------------------*\ 
+  #ASIDE
+\*-----------------------------------*/
 
   .aside {
     display: block;
@@ -2209,9 +2328,9 @@ footer .wrapper {
     margin: auto; /* fallback for margin-inline */
   }
 
-  /**
-   * FOOTER 
-   */
+  /*-----------------------------------*\ 
+  #FOOTER
+\*-----------------------------------*/
 
   .footer-title {
     font-size: 1.125rem;
