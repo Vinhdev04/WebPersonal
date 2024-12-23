@@ -140,3 +140,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   splide.mount();
 });
+
+const btnShowModal = document.querySelectorAll(".btn-read"); // Chọn tất cả các nút .btn-read
+const modal = document.querySelector(".project__modal"); // Lấy modal
+const closeModal = document.querySelector(".control i"); // Lấy nút đóng modal
+
+console.log(btnShowModal);
+
+// Hiển thị modal khi click vào bất kỳ nút "Read More"
+btnShowModal.forEach((item) => {
+  console.log(item);
+
+  item.addEventListener("click", function () {
+    modal.style.display = "flex"; // Hiển thị modal
+  });
+});
+
+// Đóng modal khi click vào nút đóng (X)
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none"; // Ẩn modal
+});
+
+// Đóng modal khi click vào body (ngoài modal content)
+document.addEventListener("click", function (e) {
+  // Kiểm tra nếu click vào body mà không phải trong modal
+  if (
+    !modal.contains(e.target) &&
+    !Array.from(btnShowModal).includes(e.target)
+  ) {
+    modal.style.display = "none"; // Ẩn modal
+  }
+});

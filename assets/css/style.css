@@ -291,6 +291,12 @@ header .btn-group {
   border-bottom: 1px solid var(--action-primary);
 }
 
+.navbar .wrapper {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
 .mobile-nav .nav-title {
   margin-bottom: 1rem;
 }
@@ -1617,6 +1623,241 @@ header .btn-group {
 }
 
 /*-----------------------------------*\ 
+  #PROJECT-RECENT
+\*-----------------------------------*/
+.recent__project {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  background: var(--background-primary);
+  position: relative;
+}
+
+.recent__project .heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent__project .heading .heading__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.recent__project .heading .heading__content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.recent__project .heading .heading__content p {
+  width: 80%;
+  font-size: 14px;
+  color: var(--foreground-secondary);
+  font-weight: 300;
+}
+
+.recent__project .heading i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 100%;
+  background: #373737;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+  position: relative;
+}
+
+.recent__project .heading i::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 2px dashed rgb(82, 82, 207);
+  width: 105%;
+  height: 105%;
+}
+
+.project__block .project__box .project__img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project__block .project__box .project__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s all linear;
+  cursor: pointer;
+  object-position: center;
+}
+
+.project__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.project__box {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed rgb(82, 82, 207);
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all linear;
+}
+
+.project__box:hover h4 {
+  color: var(--accent);
+}
+
+.project__box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.project__info h4 {
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 600;
+  max-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  transition: 0.3s all linear;
+  font-size: 20px;
+  z-index: -1;
+}
+
+.project__info p {
+  margin-top: 10px;
+  color: var(--foreground-secondary);
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.project__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project__btn .btn {
+  padding: 5px 30px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--accent);
+  cursor: pointer;
+  transition: 0.3s all linear;
+  border-radius: 10px;
+  background-color: var(--action-primary);
+  margin-bottom: 10px;
+}
+
+.project__btn .btn-read {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.project__btn .btn-read:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.project__btn .btn-view {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--action-secondary);
+}
+
+.project__btn .btn-view:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.project__modal {
+  flex-direction: column;
+  padding: 10px 20px;
+  background: bisque;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--accent);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  display: none;
+}
+
+.project__modal .control {
+  margin-left: auto;
+}
+
+.project__modal .control i {
+  font-size: 24px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: var(--background-secondary);
+  color: var(--accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.project__modal .modal .modal__content .wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.project__modal .modal .modal__content .wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project__modal .modal .modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
 
@@ -1853,6 +2094,27 @@ footer .wrapper {
 
   .project__container .about__containers {
     flex-direction: column;
+  }
+
+  /*-----------------------------------*\ 
+  #PROJECT-PAGE
+\*-----------------------------------*/
+  .recent__project .project__block {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .recent__project .heading .heading__content h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  .recent__project .heading {
+    flex-wrap: wrap;
+  }
+
+  .recent__project .heading .heading__content {
+    max-width: 300px;
   }
 }
 
@@ -2096,6 +2358,12 @@ footer .wrapper {
   .about .about__img {
     width: 100%;
   }
+  /*-----------------------------------*\ 
+    #PROJECT-PAGE
+  \*-----------------------------------*/
+  .project__block {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*-----------------------------------*\ 
@@ -2237,6 +2505,13 @@ footer .wrapper {
   .about__info {
     width: 100%;
     max-width: 100%;
+  }
+
+  /*-----------------------------------*\ 
+  #PROJECT-PAGE
+\*-----------------------------------*/
+  .recent__project .project__block {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2449,6 +2724,7 @@ footer .wrapper {
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+    flex-direction: column;
   }
 
   .topics {
@@ -2498,8 +2774,8 @@ footer .wrapper {
   }
 
   .tags .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.2rem;
   }
 
@@ -2608,5 +2884,12 @@ footer .wrapper {
 
   .footer-link {
     margin-bottom: 0.3rem;
+  }
+
+  /*-----------------------------------*\ 
+  #PROJECT-PAGE
+\*-----------------------------------*/
+  .project__block {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
