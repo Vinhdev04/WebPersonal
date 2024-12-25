@@ -1857,6 +1857,184 @@ header .btn-group {
   flex-direction: column;
   gap: 20px;
 }
+
+.blog__project {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--action-primary);
+}
+
+.blog__project .project__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  gap: 80px;
+}
+
+.blog__project .project__container .project__img {
+  width: 500px;
+  height: 550px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.blog__project .project__container .project__img .project__banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* .blog__project .project__container .project__img img.project__icon {
+  border-radius: 36px;
+}
+
+.blog__project .project__container .project__img .project__icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: 1;
+}
+
+.blog__project .project__container .project__img .project__icon--left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: 1;
+} */
+
+.blog__project .project__container .project__body {
+  /* width: 50%; */
+}
+
+.blog__project .project__container .project__body .heading p {
+  color: var(--foreground-secondary);
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.blog__project .project__container .project__body .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.blog__project .project__container .project__body .heading h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--accent);
+  line-height: 50px;
+}
+
+.blog__project .project__container .project__body .heading .desc,
+.blog__project .project__container .project__body .heading .sub__desc {
+  color: var(--foreground-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.blog__project .project__container .project__body .heading .desc {
+  margin-bottom: 10px;
+}
+
+.blog__project .project__container .project__body .heading .sub__desc {
+  margin-bottom: 20px;
+}
+
+.blog__project .project__container .control {
+  text-align: left;
+  display: block;
+}
+
+.blog__project .project__container .control a {
+  padding: 5px 30px;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--action-secondary);
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog__project .project__container .control a:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+.lastest__new {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.lastest__new .lastest__wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.lastest__new .lastest__wrapper .heading {
+  text-align: center;
+}
+
+.lastest__new .lastest__wrapper .heading p:first-child {
+  text-transform: uppercase;
+}
+
+.lastest__new .lastest__block {
+  /* border: 1px solid #aeaeae; */
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.lastest__new .lastest__block .lastest__box {
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.lastest__new .lastest__block .lastest__box .lastest__img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.lastest__new .lastest__block .lastest__box .lastest__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.lastest__new .lastest__block .lastest__box .lastest__info {
+  width: 100%;
+}
+
+.lastest__new .lastest__block .lastest__box .lastest__info a {
+  display: block;
+  color: var(--action-primary);
+  font-size: 16px;
+}
+
+.lastest__new .lastest__block .lastest__box .lastest__info h3 {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.25px;
+  margin-top: 10px;
+}
+
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
@@ -2115,6 +2293,34 @@ footer .wrapper {
 
   .recent__project .heading .heading__content {
     max-width: 300px;
+  }
+
+  .blog__project .project__container {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .blog__project .project__container .project__img {
+    width: 100%;
+  }
+
+  .blog__project .project__container .project__body .heading h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .lastest__new .lastest__block .lastest__box .lastest__info {
+    text-align: center;
+  }
+
+  .lastest__new .lastest__block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lastest__new .lastest__block .lastest__box {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -2512,6 +2718,15 @@ footer .wrapper {
 \*-----------------------------------*/
   .recent__project .project__block {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog__project .project__container {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .blog__project .project__container .project__img {
+    width: 100%;
   }
 }
 
