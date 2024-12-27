@@ -9,7 +9,8 @@
       "image": "./assets/image/Courses/project01.jpg",
       "level": "Beginner",
       "rating": 4.5,
-      "category": "Web Development"
+      "category": "Web Development",
+      "language": "Javascript"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "image": "./assets/image/Courses/project02.jpg",
       "level": "Intermediate",
       "rating": 4.7,
-      "category": "Web Design"
+      "category": "Web Design",
+      "language": "Javascript"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "image": "./assets/image/Courses/project03.jpg",
       "level": "Beginner",
       "rating": 4.4,
-      "category": "Web Development"
+      "category": "Web Development",
+      "language": "Javascript"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "image": "./assets/image/Courses/project04.jpg",
       "level": "Intermediate",
       "rating": 4.6,
-      "category": "Game Development"
+      "category": "Game Development",
+      "language": "Javascript"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "image": "./assets/image/Courses/project05.jpg",
       "level": "Advanced",
       "rating": 4.8,
-      "category": "Game Development"
+      "category": "Game Development",
+      "language": "Javascript"
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "image": "./assets/image/Courses/project06.jpg",
       "level": "Intermediate",
       "rating": 4.5,
-      "category": "E-commerce"
+      "category": "E-commerce",
+      "language": "Javascript"
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "image": "./assets/image/Courses/project07.jpg",
       "level": "Beginner",
       "rating": 4.3,
-      "category": "Entertainment"
+      "category": "Entertainment",
+      "language": "Javascript"
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "image": "./assets/image/Courses/project08.png",
       "level": "Beginner",
       "rating": 4.1,
-      "category": "Web Design"
+      "category": "Web Design",
+      "language": "Javascript"
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
       "image": "./assets/image/Courses/project09.png",
       "level": "Intermediate",
       "rating": 4.5,
-      "category": "Education"
+      "category": "Education",
+      "language": "Javascript"
     },
     {
       "id": 10,
@@ -108,7 +117,8 @@
       "image": "./assets/image/Courses/project10.png",
       "level": "Advanced",
       "rating": 4.9,
-      "category": "Web Application"
+      "category": "Web Application",
+      "language": "Javascript"
     },
     {
       "id": 11,
@@ -119,7 +129,8 @@
       "image": "./assets/image/Courses/project11.png",
       "level": "Advanced",
       "rating": 4.7,
-      "category": "Entertainment"
+      "category": "Entertainment",
+      "language": "Javascript"
     },
     {
       "id": 12,
@@ -130,7 +141,8 @@
       "image": "./assets/image/Courses/project12.png",
       "level": "Intermediate",
       "rating": 4.5,
-      "category": "Web Design"
+      "category": "Web Design",
+      "language": "Javascript"
     },
     {
       "id": 13,
@@ -141,7 +153,8 @@
       "image": "./assets/image/Courses/project13.png",
       "level": "Advanced",
       "rating": 4.6,
-      "category": "Web Development"
+      "category": "Web Development",
+      "language": "Javascript"
     },
     {
       "id": 14,
@@ -152,7 +165,8 @@
       "image": "./assets/image/Courses/project14.png",
       "level": "Intermediate",
       "rating": 4.7,
-      "category": "E-commerce"
+      "category": "E-commerce",
+      "language": "Javascript"
     }
   ]
 }

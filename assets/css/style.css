@@ -1676,6 +1676,7 @@ header .btn-group {
   place-items: center;
   transition: 0.3s;
   position: relative;
+  animation: rotate 0.5s linear infinite;
 }
 
 .recent__project .heading i::after {
@@ -1873,7 +1874,7 @@ header .btn-group {
 
 .blog__project .project__container .project__img {
   width: 500px;
-  height: 550px;
+  height: 500px;
   /* overflow: hidden; */
   position: relative;
 }
@@ -1883,7 +1884,13 @@ header .btn-group {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.blog__project .project__container .project__img .project__banner:hover {
+  transform: scale(1.1);
 }
 
 /* .blog__project .project__container .project__img img.project__icon {
@@ -2035,6 +2042,303 @@ header .btn-group {
   margin-top: 10px;
 }
 
+/*-----------------------------------*\ 
+  #CONTACT-PAGE
+\*-----------------------------------*/
+.contact__social {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact__social .social__wrapper .social__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact__social .social__wrapper .social__content .social__box {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 56px 25px 60px 25px;
+  box-shadow: 0 0 10px rgb(43, 140, 175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.contact__social .social__wrapper .social__content .social__box h3 {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact__social .social__wrapper .social__content .social__box:hover h3 {
+  color: var(--accent);
+}
+
+.contact__social .social__wrapper .social__content .social__box:hover {
+  box-shadow: 0 0 10px rgb(160, 58, 160);
+}
+
+.contact__social .social__wrapper .social__content .social__box img {
+  transition: 0.3s all linear;
+}
+
+.contact__social .social__wrapper .social__content .social__box:hover img {
+  transform: translateY(-10px);
+}
+
+.contact__social .social__wrapper .social__content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.contact__social .social__wrapper .social__content .social__box p {
+  text-align: center;
+}
+
+.contact__inform {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__heading h2 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__content {
+  display: flex;
+  gap: 20px;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__content .roadmap__box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* padding: 56px 25px 60px 25px; */
+  box-shadow: 0 0 10px rgb(43, 140, 175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+  overflow: hidden;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__content .roadmap__box figure {
+  width: 350px;
+  height: 250px;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__content .roadmap__box figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact__inform .roadmap__wrapper .roadmap__content .roadmap__box h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: var(--accent);
+}
+
+.contact__block {
+  padding: 50px 0;
+}
+
+.contact__block .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact__block .heading h2 {
+  font-size: var(--fs-4);
+  font-weight: 500;
+}
+
+.contact__block .heading h1 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.form__wrapper {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.form__content {
+  background: #272a34;
+  padding: 30px 40px;
+  width: 50%;
+}
+
+.form__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__content h3 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.form__content input {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: 0;
+  padding: 0 10px;
+  color: #aeaeae;
+  background: transparent;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.form__content input:focus,
+.form__content textarea:focus {
+  border: 1px solid var(--accent);
+}
+
+.form__content textarea {
+  width: 100%;
+  height: 150px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: 0;
+  padding: 10px 10px;
+  color: #aeaeae;
+  background: transparent;
+  resize: none;
+}
+
+.form__content button {
+  padding: 10px 16px;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background: #fff;
+  color: var;
+  color: var(--accent);
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form__content button:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.form__block {
+  width: 50%;
+  background: #1c1e25;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__block h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.form__block p {
+  color: #aeaeae;
+  margin-bottom: 20px;
+}
+
+.form__block a {
+  color: #aeaeae;
+  margin-bottom: 20px;
+}
+
+.form__box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.form__box .icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.form__details:hover p b {
+  color: var(--accent);
+}
+
+.form__details:hover a b {
+  color: var(--accent);
+}
+
+.form__details:hover p b,
+.form__box .icon {
+  color: var(--accent);
+}
+
+.form__details:hover a b,
+.form__box .icon {
+  color: var(--accent);
+}
+
+.form__details {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6666;
+}
+
+.form__details p {
+  color: #666;
+}
+
+.form__details a {
+  color: #666;
+}
+
+.form__details p b {
+  color: #fff;
+  font-weight: 500;
+}
+
+.form__details a b {
+  color: #fff;
+  font-weight: 500;
+}
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
@@ -2322,6 +2626,31 @@ footer .wrapper {
     max-width: 100%;
     margin-bottom: 20px;
   }
+
+  /*-----------------------------------*\ 
+  #CONTACT-PAGE
+\*-----------------------------------*/
+  .contact__inform .roadmap__wrapper .roadmap__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* place-items: center; */
+  }
+
+  .contact__social .social__wrapper .social__content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact__block .form__wrapper {
+    flex-direction: column;
+  }
+
+  .contact__block .form__wrapper .form__content {
+    width: 100%;
+  }
+
+  .contact__block .form__wrapper .form__block {
+    width: 100%;
+  }
 }
 
 /*-----------------------------------*\ 
@@ -2570,6 +2899,18 @@ footer .wrapper {
   .project__block {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /*-----------------------------------*\ 
+    #CONTACT-PAGE
+  \*-----------------------------------*/
+  .contact__social .social__wrapper .social__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__inform .container .roadmap__wrapper .roadmap__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }
 
 /*-----------------------------------*\ 
@@ -2723,10 +3064,19 @@ footer .wrapper {
   .blog__project .project__container {
     gap: 20px;
     grid-template-columns: 1fr;
+    place-items: center;
   }
 
   .blog__project .project__container .project__img {
-    width: 100%;
+    width: 80%;
+  }
+
+  /*-----------------------------------*\ 
+  #CONTACT-PAGE
+  \*-----------------------------------*/
+  .contact__social .social__wrapper .social__content {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -3106,5 +3456,14 @@ footer .wrapper {
 \*-----------------------------------*/
   .project__block {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
