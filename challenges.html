@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CraftedJourney - Cộng đồng lập trình viên chia sẻ các dự án, bài học, và hành trình lập trình của mình. Khám phá các công nghệ mới và học hỏi từ những người cùng chí hướng."
+    />
+    <meta
+      name="keywords"
+      content="lập trình, dự án, lập trình viên, học lập trình, coding journey, CraftedJourney"
+    />
+    <meta name="Vaniiz | Web Development" content="Developer" />
+    <title>CraftedJourney - Challenges</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image/icon16.webp"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="light-theme">
+    <!-- * start: header * -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#">
+            <img
+              src="./assets/image/daily.dev_light.svg"
+              alt="Logo"
+              width="150"
+              height="70px"
+              class="logo-light"
+            />
+            <span> Vaniiz</span>
+            <img
+              src="./assets/image/daily.dev_dark.svg"
+              alt="Logo"
+              width="150"
+              height="70px"
+              class="logo-dark"
+            />
+          </a>
+
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li>
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+
+              <li>
+                <a href="project.html" class="nav-link">Projects</a>
+              </li>
+
+              <li>
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+          </div>
+
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="wrapper">
+              <p class="h3 nav-title">Main Menu</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="project.html" class="nav-link">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="h3 nav-title">Topics</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Database</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Accessibility</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Performance</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Coding</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="skill.html" class="nav-link">Skill</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- * end: header * -->
+
+    <!-- * start: main * -->
+    <section class="challenges">
+      <div class="container">
+        <div class="challenges__top">
+          <div class="control">
+            <input
+              type="search"
+              class="challenges__input"
+              placeholder="Search challenges..."
+              id="input"
+              required
+              value=""
+            />
+            <button class="btn-search">Search</button>
+          </div>
+          <div class="option">
+            <select name="" id="">
+              <option value="all">All</option>
+              <option value="ease">Ease</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="challenges__content">
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img
+                  src="./assets/image/Tech book club landing page.jpg"
+                  alt="Conference ticket generator"
+                />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Conference ticket generator</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img
+                  src="./assets/image/Note-taking web app.webp"
+                  alt="Note-taking web app"
+                />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Note-taking web app</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img src="./assets/image/Bento grid.webp" alt="Bento grid" />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Bento grid</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img
+                  src="./assets/image/Advice generator app.jpg"
+                  alt="Advice generator"
+                />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Advice generator</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img
+                  src="./assets/image/Age calculator app.webp"
+                  alt="Age calculator"
+                />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Age calculator</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="challenges__item">
+            <div class="challenges__img">
+              <a href="#">
+                <img
+                  src="./assets/image/Blog preview card.webp"
+                  alt="Blog preview card"
+                />
+              </a>
+            </div>
+            <div class="challenges__info">
+              <h3 class="title">
+                <a href="#">Blog preview card</a>
+              </h3>
+              <div class="info__box">
+                <div class="type">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <div class="level">
+                  <span>JUNIOR</span>
+                </div>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt tempora libero voluptatem nesciunt repudiandae deleniti
+                beatae sit aspernatur ducimus ullam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Phân trang -->
+        <div class="pagination"></div>
+      </div>
+    </section>
+    <!-- * end: main * -->
+
+    <!-- * footer * -->
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="footer-logo">
+            <img
+              src="./assets/image/logo-dark.svg"
+              alt="DevBlog's Logo"
+              width="150"
+              class="logo-light"
+            />
+            <img
+              src="./assets/image/logo-dark.svg"
+              alt="DevBlog's Logo"
+              width="150"
+              class="logo-dark"
+            />
+          </a>
+
+          <p class="footer-text">
+            Learn about Web accessibility, Web performance, and Database
+            management.
+          </p>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Q&A</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Q&A</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Security</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Privacy Notice</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cookie Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms Of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">
+        &copy; Copyright 2024 <a href="#">Phạm Công Vinh</a>
+      </p>
+    </footer>
+    <!-- * end: footer * -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+  </body>
+  <script src="./main.js"></script>
+  <script src="./challenges.js"></script>
+</html>

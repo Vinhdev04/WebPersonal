@@ -2339,6 +2339,195 @@ header .btn-group {
   color: #fff;
   font-weight: 500;
 }
+
+/*-----------------------------------*\ 
+  #CHALLENGES-PAGE
+\*-----------------------------------*/
+.challenges {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: aliceblue;
+}
+
+.challenges .challenges__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.challenges__top .control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.challenges__top .control button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: chocolate;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.challenges__top .control button:hover {
+  background: #333;
+}
+
+.challenges .challenges__top .control .challenges__input {
+  width: 350px;
+  height: 50px;
+  border: 1px solid #aeaeae;
+  border-radius: 8px;
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.challenges .challenges__top .control .challenges__input:focus {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 10px rgb(57, 81, 187);
+}
+
+.challenges .challenges__top .option select {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.challenges .challenges__top select:hover {
+  border: 2px dashed var(--accent);
+}
+
+.challenges .challenges__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.challenges__item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(43, 140, 175);
+  transition: 0.3s;
+}
+
+.challenges__item:hover {
+  box-shadow: 0 0 10px rgb(160, 58, 160);
+}
+
+.challenges__info {
+  background: #fff;
+  padding: 10px;
+  max-width: 350px;
+  height: auto;
+}
+
+.challenges__info p {
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.challenges__info .title a {
+  font-weight: 600;
+  color: var(--accent);
+  padding: 0 10px;
+}
+
+.challenges__info .info__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.challenges__info .info__box .type {
+  gap: 10px;
+  display: flex;
+}
+
+.challenges__info .info__box .type span:first-child {
+  color: #cb4c10;
+  font-weight: 600;
+}
+
+.challenges__info .info__box .type span:nth-child(2) {
+  color: hsl(227 45% 44%);
+  opacity: 1;
+  font-weight: 600;
+}
+
+.challenges__info .info__box .type span:last-child {
+  color: #d5ad1a;
+  font-weight: bold;
+}
+
+.challenges__info .info__box .level {
+  padding: 2px 3px;
+  background: rgb(62, 160, 62);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.challenges__img a {
+  display: block;
+  width: 350px;
+  height: 250px;
+}
+
+.challenges__img a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.challenges .pagination ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-btn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/

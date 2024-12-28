@@ -1,5 +1,5 @@
 {
-  "courses": [
+  "projects": [
     {
       "id": 1,
       "title": "Software M4",
@@ -167,6 +167,1074 @@
       "rating": 4.7,
       "category": "E-commerce",
       "language": "Javascript"
+    },
+    {
+      "id": 15,
+      "title": "Sign In/Up Form",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project15.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 16,
+      "title": "Toast Message",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project16.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 17,
+      "title": "To-do List",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project17.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 18,
+      "title": "English Dictionary API",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project18.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 19,
+      "title": "Quiz Apps",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project19.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 20,
+      "title": "Generator Password",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project20.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 21,
+      "title": "Search Word API",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project21.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 22,
+      "title": "Code Fireworks",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project22.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 23,
+      "title": "Code Sun and Earth",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project23.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
+    },
+    {
+      "id": 24,
+      "title": "Merry Christmas",
+      "duration": "4 months",
+      "price": 12000,
+      "description": "Website thương mại điện tử với HTML và CSS.",
+      "image": "./assets/image/Courses/project24.png",
+      "level": "Intermediate",
+      "rating": 4.7,
+      "category": "E-commerce",
+      "language": "Javascript"
     }
-  ]
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Conference ticket generator",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "easy",
+      "image": "./assets/image/Conference-ticket-generator.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tic Tac Toe Game",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advances",
+      "image": "./assets/image/Tic-Tac-Toe-game.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Todo App",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Medium",
+      "image": "./assets/image/Todo-app.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Card Summary",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/card-order-summary.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Snap Page",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/snap-landing-page.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Calculator",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Medium",
+      "image": "./assets/image/calculator.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Card Timmer",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/card-timer.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Contact Form Personal",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/contact-form-personal.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Testimonials Grid Layout",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Testimonials-grid-section.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Tech Book Club",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Tech-book-club-landing-page.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Social Media Dashboard",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Social-media-dashboard-with-theme-switcher.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Social Link",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Social-links-profile.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Single Page Developer",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Single-page-developer-portfolio.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Single Page Design",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Single-page-design-portfolio.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Single Price Grid Layout",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Single-price-grid-component.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "REST Countries API",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/REST-Countries-API-with-color-theme-switcher.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "QR Code",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/QR-code-component.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Profile Card",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Profile-card-component.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Product List",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Product-list-with-cart.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Pricing Components",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Basic",
+      "image": "./assets/image/Pricing-component-with-toggle.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Personal Financial App",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Personal-finance-app.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Contact Form Features",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/contact-fomr-feature.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Notigications",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/notigications.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Note Talking App",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Note-taking-web-app.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "NFT Preview",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/NFT-preview-card.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Newsletter Form",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Newsletter-sign-up.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "News Home Page",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/News-homepage.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Mortgage Repayment",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Mortgage-repayment-calculator.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Credit Card",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/credit-card.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Launch Countdown",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Launch-countdown-timer.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Job Listingswith",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Job-listingswith.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Sign Up Form",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Intro-component-with-sign-up-form.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Interactive Rating",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Interactive-rating-component.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Interactive Comments",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Interactive-comments-section.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Add Card",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/add-card.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Quiz App",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Frontend-Quiza-app.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "FAQ Accordion",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/faq-accordion.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Expenses Chart",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Expenses-chart.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "E-commerce Product",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/E-commerce-product.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Blog Preview Card",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Blog-preview-card.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Bento Grid Layout",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Bento-grid.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Card Premium",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Card-premium.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Age Calculator App",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Age-calculator-app.webp",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Comments Block",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/Advice-generator-app.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Calculator Bill",
+      "description": "Thiết kế website có thể hiển thị trên màn hình di đ��ng cùng chính xác với cảnh báo của thiết bị.",
+      "level": "Advanced",
+      "image": "./assets/image/calculator-bill.jpg",
+      "type": [
+        {
+          "id": 1,
+          "skill": "HTML"
+        },
+        {
+          "id": 2,
+          "skill": "CSS"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript"
+        }
+      ]
+    }
+  ],
+  "total": 45
 }
