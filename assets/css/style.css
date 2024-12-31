@@ -1650,7 +1650,9 @@ header .btn-group {
   justify-content: start;
   gap: 10px;
 }
-
+.recent__project .heading i {
+  box-shadow: 0 0 10px rgb(82, 82, 207);
+}
 .recent__project .heading .heading__content h1 {
   font-size: 50px;
   font-weight: 500;
@@ -1820,6 +1822,7 @@ header .btn-group {
   width: 60%;
   height: 60%;
   display: none;
+  z-index: 100;
 }
 
 .project__modal .control {
@@ -2544,13 +2547,36 @@ header .btn-group {
   flex-direction: column-reverse;
   gap: 10px;
 }
+
 .bot__box a {
   display: flex;
   flex-direction: column;
+  animation: none;
 }
+
 .bot__box a img {
-  border: 1px dashed rgb(44, 41, 216);
+  border: 2px dashed rgb(44, 41, 216);
   transition: 0.3s all ease-in;
+  animation: rotateBox 2s linear infinite;
+  box-shadow: 0 0 10px rgb(82, 82, 207);
+}
+
+@keyframes rotateBox {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .bot__box a img:hover {
   box-shadow: 0 0 10px purple;
@@ -2583,6 +2609,7 @@ header .btn-group {
 .bot__icon:hover a {
   background-color: #001c66;
 }
+
 .bot__icon a {
   display: flex;
   align-items: center;
@@ -2593,17 +2620,20 @@ header .btn-group {
   border-radius: 50%;
   transition: 0.3s all linear;
 }
+
 .bot__icon a i {
   font-size: 22px;
   color: #fff;
   transition: 0.3s all linear;
 }
+
 .bot__icon span {
   color: #001c66;
   font-size: 20px;
   font-weight: 500;
   transition: 0.3s all linear;
 }
+
 .bot__social::before {
   content: "";
   position: absolute;
@@ -2615,6 +2645,7 @@ header .btn-group {
   border-top: 8px solid #fff;
   border-left: 8px solid transparent;
 }
+
 .bot__social.show {
   display: block;
   position: absolute;
