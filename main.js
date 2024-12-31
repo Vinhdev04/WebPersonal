@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navMenuBtn.addEventListener("click", navToggleFunc);
   navCloseBtn.addEventListener("click", navToggleFunc);
 
-  // Theme toggle functionality
+  // TODO: Theme toggle functionality
   const themeBtn = document.querySelectorAll(".theme-btn");
 
   themeBtn.forEach((button) => {
@@ -26,7 +26,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Typed.js effect for name and sub-title
+  // TODO: HANDLE SHOW/HIDE BOT-SOCIAL
+  const bot = document.querySelector(".bot__box");
+  console.log(bot);
+  const botSocials = document.querySelector(".bot__social");
+  console.log(botSocials);
+  function showBotSocial() {
+    botSocials.classList.toggle("show");
+  }
+
+  bot.addEventListener("click", showBotSocial);
+  document.querySelector("body").addEventListener("click", (event) => {
+    if (!bot.contains(event.target) && !botSocials.contains(event.target)) {
+      botSocials.classList.remove("show");
+    }
+  });
+
+  // TODO: Typed.js effect for name and sub-title
   const nameElement = document.querySelector(".name");
   if (nameElement) {
     new Typed(".name", {
@@ -58,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error('Element with class "name" not found.');
   }
 
-  // Typed.js effect for the About page (if .text element exists)
+  // TODO: Typed.js effect for the About page (if .text element exists)
   const textElement = document.querySelector(".text");
   if (textElement) {
     new Typed(".text", {
@@ -147,7 +163,7 @@ const closeModal = document.querySelector(".control i"); // Lấy nút đóng mo
 
 console.log(btnShowModal);
 
-// Hiển thị modal khi click vào bất kỳ nút "Read More"
+// TODO: Hiển thị modal khi click vào bất kỳ nút "Read More"
 btnShowModal.forEach((item) => {
   console.log(item);
 
@@ -156,12 +172,12 @@ btnShowModal.forEach((item) => {
   });
 });
 
-// Đóng modal khi click vào nút đóng (X)
+// TODO: Đóng modal khi click vào nút đóng (X)
 closeModal.addEventListener("click", function () {
   modal.style.display = "none"; // Ẩn modal
 });
 
-// Đóng modal khi click vào body (ngoài modal content)
+// TODO: Đóng modal khi click vào body (ngoài modal content)
 document.addEventListener("click", function (e) {
   // Kiểm tra nếu click vào body mà không phải trong modal
   if (

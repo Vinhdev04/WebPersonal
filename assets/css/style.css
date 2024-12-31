@@ -2529,6 +2529,100 @@ header .btn-group {
 }
 
 /*-----------------------------------*\ 
+  #BOT-SOCIAL
+\*-----------------------------------*/
+.bot {
+  position: fixed;
+  right: 20px;
+  z-index: 100;
+  bottom: 50px;
+}
+
+.bot__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.bot__box a {
+  display: flex;
+  flex-direction: column;
+}
+.bot__box a img {
+  border: 1px dashed rgb(44, 41, 216);
+  transition: 0.3s all ease-in;
+}
+.bot__box a img:hover {
+  box-shadow: 0 0 10px purple;
+}
+
+.bot__social {
+  padding: 5px;
+  width: 235px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+  display: none;
+}
+
+.bot__icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.bot__icon:hover span {
+  color: #00adef;
+}
+
+.bot__icon:hover a {
+  background-color: #001c66;
+}
+.bot__icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #00adef;
+  border-radius: 50%;
+  transition: 0.3s all linear;
+}
+.bot__icon a i {
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s all linear;
+}
+.bot__icon span {
+  color: #001c66;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s all linear;
+}
+.bot__social::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: 25px;
+  left: auto;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff;
+  border-left: 8px solid transparent;
+}
+.bot__social.show {
+  display: block;
+  position: absolute;
+  right: 3px;
+  bottom: 68px;
+}
+
+/*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
 
