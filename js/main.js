@@ -1,8 +1,20 @@
+import {
+  bot,
+  botSocials,
+  btnShowModal,
+  closeModal,
+  faq,
+  modal,
+  nameElement,
+  nav,
+  navCloseBtn,
+  navMenuBtn,
+  subElement,
+  textElement,
+} from "./variable.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   // Navbar toggle functionality
-  const nav = document.querySelector(".mobile-nav");
-  const navMenuBtn = document.querySelector(".nav-menu-btn");
-  const navCloseBtn = document.querySelector(".nav-close-btn");
 
   const navToggleFunc = function () {
     nav.classList.toggle("active");
@@ -12,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   navCloseBtn.addEventListener("click", navToggleFunc);
 
   // TODO: Theme toggle functionality
+  // TODO: Theme toggle functionality
   const themeBtn = document.querySelectorAll(".theme-btn");
-
   themeBtn.forEach((button) => {
     button.addEventListener("click", function () {
       document.body.classList.toggle("light-theme");
@@ -27,9 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // TODO: HANDLE SHOW/HIDE BOT-SOCIAL
-  const bot = document.querySelector(".bot__box");
+
   console.log(bot);
-  const botSocials = document.querySelector(".bot__social");
   console.log(botSocials);
   function showBotSocial() {
     botSocials.classList.toggle("show");
@@ -43,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // TODO: Typed.js effect for name and sub-title
-  const nameElement = document.querySelector(".name");
+
   if (nameElement) {
     new Typed(".name", {
       strings: ["Phạm&nbsp;Vinh", "A Frontend Developer", "A Web Developer"],
@@ -53,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fadeOut: false,
       onComplete: function () {
         // Initialize second Typed.js effect for sub-title after the first one finishes
-        const subElement = document.querySelector(".sub");
+
         if (subElement) {
           new Typed(".sub", {
             strings: [
@@ -75,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // TODO: Typed.js effect for the About page (if .text element exists)
-  const textElement = document.querySelector(".text");
+
   if (textElement) {
     new Typed(".text", {
       strings: ["Junior Programmer", "Developer", "Software Engineer"],
@@ -120,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // TODO: HANDLE QUESTION/ANSWER FAQS
-const faq = document.querySelectorAll(".faq__box");
+
 faq.forEach((faq) => {
   faq.addEventListener("click", () => {
     faq.classList.toggle("show__answer");
@@ -156,10 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   splide.mount();
 });
-
-const btnShowModal = document.querySelectorAll(".btn-read"); // Chọn tất cả các nút .btn-read
-const modal = document.querySelector(".project__modal"); // Lấy modal
-const closeModal = document.querySelector(".control i"); // Lấy nút đóng modal
 
 console.log(btnShowModal);
 
