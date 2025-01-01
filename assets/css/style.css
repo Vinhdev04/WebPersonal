@@ -194,14 +194,22 @@ html {
 .dark-theme .aside .h2 {
   color: var(--foreground-primary);
 }
+.light-theme .logo-light,
+.dark-theme .logo-dark {
+  margin-right: 0;
+}
 
 /*-----------------------------------*\ 
   #HEADER
 \*-----------------------------------*/
 
 header {
-  background: var(--background-primary);
-  border-bottom: 1px solid #ddd;
+  background: #f6fcff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 header .flex-wrapper {
@@ -213,7 +221,7 @@ header .flex-wrapper {
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 .logo-light,
@@ -320,7 +328,7 @@ header .btn-group {
 
 .hero {
   background: var(--background-primary);
-  padding-top: 2rem;
+  padding-top: 10rem;
   padding-bottom: var(--py);
   text-align: center;
 }
@@ -899,6 +907,7 @@ header .btn-group {
 .info {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 
 .info .wrapper {
@@ -945,8 +954,11 @@ header .btn-group {
   border-radius: 10px;
   transition: 0.3s all linear;
   cursor: pointer;
+  background: aliceblue;
 }
-
+.info .info__container .info__block p {
+  color: #001c66;
+}
 .info .info__container .info__block:hover {
   color: #fff;
   box-shadow: 0 0 10px var(--accent);
@@ -960,12 +972,16 @@ header .btn-group {
 }
 
 .info .info__content h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: -10px;
+}
+
+.info .info__content h1 {
+  color: var(--foreground-primary);
 }
 
 .info .info__content p {
@@ -987,6 +1003,7 @@ header .btn-group {
 .about__services {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 
 .about__services .heading {
@@ -994,7 +1011,7 @@ header .btn-group {
 }
 
 .about__services .heading h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1015,21 +1032,20 @@ header .btn-group {
 }
 
 .about__services .services__card .card {
-  border: 1px solid #ebcece;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 5%;
-  /* background: red; */
   width: 400px;
   border-radius: 10px;
-  transition: 0.3s all ease-in;
+  border: 2px dashed rgb(83, 83, 241);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all linear;
 }
 
 .about__services .services__card .card:hover {
-  border: 1px solid var(--accent);
   transform: translateY(-10px);
 }
 
@@ -1044,17 +1060,20 @@ header .btn-group {
   font-weight: 500;
   transition: 0.3s;
   cursor: pointer;
-}
-.about__services .services__card .card h2:hover {
   color: var(--accent);
+}
+
+.about__services .services__card .card h2:hover {
+  color: var(--foreground-primary);
 }
 
 .about__services .services__card .card p {
   font-size: 14px;
-  /* color: var(--action-primary); */
-  color: #000;
+
+  color: var(--foreground-secondary);
   opacity: 0.6;
   font-weight: 300;
+  text-align: justify;
 }
 
 /*-----------------------------------*\ 
@@ -1063,16 +1082,15 @@ header .btn-group {
 .about__gallery {
   padding-top: 50px;
   padding-bottom: 50px;
-  /* background: pink; */
+  background: var(--background-primary);
 }
 
 .about__gallery .heading {
   text-align: center;
-  /* width: 60%; */
 }
 
 .about__gallery .heading h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1152,6 +1170,7 @@ header .btn-group {
 .about__media {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 
 .about__media .heading {
@@ -1159,12 +1178,13 @@ header .btn-group {
 }
 
 .about__media .heading h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
+  margin-bottom: 0;
 }
 
 .media__content {
@@ -1192,11 +1212,13 @@ header .btn-group {
   border: 2px solid var(--accent);
   color: var(--accent);
 }
+
 .media__content .control .btn-more:hover a {
   color: var(--accent);
 }
+
 .media__content .control .btn-more a {
-  color: var(--background-primary);
+  color: var(--white);
   font-weight: 500;
   display: block;
 }
@@ -1231,18 +1253,18 @@ header .btn-group {
 .faq {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 .faq .heading {
   text-align: center;
 }
 
 .faq .heading h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: -10px;
 }
 
 .faq .heading h1 {
@@ -1311,11 +1333,13 @@ header .btn-group {
   font-size: 18px;
   font-weight: 500;
   transition: 0.2s all linear;
+  color: var(--foreground-primary);
 }
 
 .faq .faq__question i {
   font-size: 15px;
   transition: 0.2s all linear;
+  color: var(--accent);
 }
 
 .faq__box.show__answer {
@@ -1343,7 +1367,7 @@ header .btn-group {
 }
 
 .feedback .heading h2 {
-  color: var(--action-primary);
+  color: var(--accent);
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1863,15 +1887,14 @@ header .btn-group {
 }
 
 .blog__project {
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 50px;
-  background-color: var(--action-primary);
+  background: var(--background-primary);
 }
 
 .blog__project .project__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* align-items: center; */
   gap: 80px;
 }
 
@@ -1893,30 +1916,8 @@ header .btn-group {
 }
 
 .blog__project .project__container .project__img .project__banner:hover {
-  transform: scale(1.1);
+  box-shadow: 0 0 10px #d5b6b6;
 }
-
-/* .blog__project .project__container .project__img img.project__icon {
-  border-radius: 36px;
-}
-
-.blog__project .project__container .project__img .project__icon {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  z-index: 1;
-}
-
-.blog__project .project__container .project__img .project__icon--left {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -40px;
-  left: -40px;
-  z-index: 1;
-} */
 
 .blog__project .project__container .project__body {
   /* width: 50%; */
@@ -1973,6 +1974,7 @@ header .btn-group {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+  color: #fff;
 }
 
 .blog__project .project__container .control a:hover {
@@ -2051,11 +2053,20 @@ header .btn-group {
 .contact__social {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 
 .contact__social .social__wrapper .social__heading {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.contact__social .social__wrapper .social__heading h2 {
+  color: var(--accent);
+}
+
+.contact__social .social__wrapper .social__heading h1 {
+  color: var(--foreground-primary);
 }
 
 .contact__social .social__wrapper .social__content .social__box {
@@ -2105,8 +2116,9 @@ header .btn-group {
 }
 
 .contact__inform {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
+  background: var(--background-primary);
 }
 
 .contact__inform .roadmap__wrapper .roadmap__heading {
@@ -2117,6 +2129,11 @@ header .btn-group {
 .contact__inform .roadmap__wrapper .roadmap__heading h2 {
   font-size: var(--fs-2);
   font-weight: 700;
+  color: var(--accent);
+}
+
+.contact__inform .roadmap__wrapper .roadmap__heading h1 {
+  color: var(--foreground-primary);
 }
 
 .contact__inform .roadmap__wrapper .roadmap__content {
@@ -2158,6 +2175,7 @@ header .btn-group {
 
 .contact__block {
   padding: 50px 0;
+  background-image: url(/assets/image/map-transparent.png);
 }
 
 .contact__block .heading {
@@ -2168,6 +2186,7 @@ header .btn-group {
 .contact__block .heading h2 {
   font-size: var(--fs-4);
   font-weight: 500;
+  color: var(--accent);
 }
 
 .contact__block .heading h1 {
@@ -2993,7 +3012,7 @@ footer .wrapper {
 \*-----------------------------------*/
 
   .navbar {
-    padding: 30px 0;
+    /* padding: 30px 0; */
   }
 
   body.dark-theme .navbar a {

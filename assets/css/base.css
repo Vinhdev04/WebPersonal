@@ -54,7 +54,7 @@ body.light-theme {
    * light theme colors 
    */
 
-  --background-primary: hsl(0, 0%, 100%);
+  --background-primary: #f6fcff;
   --background-secondary: hsl(0, 0%, 97%);
 
   --action-primary: hsl(214, 32%, 91%);
@@ -72,7 +72,7 @@ body.light-theme {
    * dark theme colors 
    */
 
-  --background-primary: hsl(218, 23%, 23%);
+  --background-primary: #001c66;
   --background-secondary: hsl(220, 26%, 14%);
 
   --action-primary: hsl(216, 15%, 52%);
@@ -139,7 +139,8 @@ body.light-theme {
 .btn-secondary:hover {
   border-color: var(--accent);
 }
------------------------------*/ .dark-theme .btn-primary:hover {
+
+.dark-theme .btn-primary:hover {
   color: var(--background-primary);
 }
 
@@ -163,4 +164,8 @@ body.light-theme {
 
 .typed-cursor {
   color: var(--accent); /* Màu sắc con trỏ */
+}
+
+.dark-theme header {
+  background: #001c66;
 }
