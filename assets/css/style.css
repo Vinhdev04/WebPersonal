@@ -694,12 +694,6 @@ header .btn-group {
   padding-bottom: 80px;
 }
 
-.projects .article__container .project__img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
 .projects .article__container {
   width: 350px;
   height: 350px;
@@ -1717,6 +1711,14 @@ header .btn-group {
   height: 105%;
 }
 
+.project__block {
+  width: 80%;
+}
+
+.project__box {
+  width: 100%;
+}
+
 .project__block .project__box .project__img {
   width: 100%;
   height: auto;
@@ -1734,8 +1736,6 @@ header .btn-group {
 }
 
 .project__block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 100%;
 }
@@ -1754,9 +1754,10 @@ header .btn-group {
   color: var(--accent);
 }
 
-.project__box:hover {
-  transform: translateY(-10px);
+.project__box:hover img {
+  transform: scale(1.1);
   cursor: pointer;
+  transition: 0.3s all linear;
 }
 
 .project__info h4 {
@@ -1764,12 +1765,12 @@ header .btn-group {
   color: var(--accent);
   font-weight: 600;
   max-height: 30px;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: wrap;
   transition: 0.3s all linear;
   font-size: 20px;
   z-index: -1;
+  margin-bottom: 20px;
 }
 
 .project__info p {
@@ -1780,14 +1781,7 @@ header .btn-group {
   margin-bottom: 10px;
 }
 
-.project__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.project__btn .btn {
+/* .project__btn .btn {
   padding: 5px 30px;
   border: 0;
   outline: 0;
@@ -1805,8 +1799,8 @@ header .btn-group {
   background-color: transparent;
   border: 1px solid var(--accent);
   color: var(--accent);
-}
-
+} */
+/* 
 .project__btn .btn-read:hover {
   background: var(--accent);
   color: #fff;
@@ -1821,7 +1815,7 @@ header .btn-group {
 .project__btn .btn-view:hover {
   background: transparent;
   color: var(--accent);
-}
+} */
 
 .btn-dot {
   display: flex;
@@ -2690,16 +2684,22 @@ header .btn-group {
 footer {
   background: var(--background-primary);
 }
-
+/* 
 footer .container {
   padding: var(--py) 15px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-}
+} */
 
 footer .wrapper {
   text-align: center;
+}
+
+footer .container .wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .footer-logo {
@@ -2914,13 +2914,10 @@ footer .wrapper ul li {
     padding: 0;
     padding-top: 20px;
   }
-
-  footer .container .wrapper {
-    flex-direction: column;
-    margin: 0 20px;
-    align-items: center;
+  footer .container .wrap {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
   }
-
   .light-theme .logo-light,
   .dark-theme .logo-dark {
     margin-right: 0;

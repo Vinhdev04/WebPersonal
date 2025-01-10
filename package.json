@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "concurrently": "^9.1.2",
     "json-server": "^1.0.0-beta.3"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "node server.js",
+    "frontend": "react-scripts start"
   }
 }

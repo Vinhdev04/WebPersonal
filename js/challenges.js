@@ -7,7 +7,7 @@ const limit = 9;
 // Hàm gọi API để lấy dữ liệu
 const fetchAPI = async (page) => {
   try {
-    const res = await fetch(`${api}?_page=${page}&_limit=${limit}`);
+    const res = await fetch(`${API_CHALLENGES}?_page=${page}&_limit=${limit}`);
     if (!res.ok) {
       throw new Error(`Lỗi HTTP! Mã lỗi: ${res.status}`);
     }

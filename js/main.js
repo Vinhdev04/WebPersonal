@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       backSpeed: 40,
       loop: true,
       fadeOut: false,
+      showCursor: false,
       onComplete: function () {
         // Initialize second Typed.js effect for sub-title after the first one finishes
 
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             backSpeed: 40,
             loop: true,
             fadeOut: false,
+            showCursor: false,
           });
         } else {
           console.error('Element with class "sub" not found.');
@@ -94,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
       backSpeed: 50,
       loop: true,
       fadeOut: false,
+      showCursor: false,
     });
   } else {
     console.error('Element with class "text" not found.');
@@ -108,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "20px", // Default gap
     autoplay: true,
     loop: true,
+
     breakpoints: {
       1200: {
         perPage: 4,
@@ -174,7 +178,7 @@ console.log(btnShowModal);
 btnShowModal.forEach((item) => {
   console.log(item);
 
-  item.addEventListener("click", function () {
+  item.addEventListener("click", function (e) {
     modal.style.display = "flex"; // Hiển thị modal
   });
 });
